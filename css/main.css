@@ -1,0 +1,25 @@
+@media (min-width: 768px) {
+  body {
+    padding: 5%;
+  }
+  #main-nav ul li {
+    display: inline;
+    margin-left: 20px;
+  }
+  #main-nav {
+    float: right;
+    padding: 0;
+  }  
+}
+
+.carousel-inner > .item > img, .carousel-inner > .item > a > img{
+    margin:auto;
+}
+
+.carousel {
+  margin-top: 16px;
+}
+
+#columns {
+  margin-top: 32px;
+}
