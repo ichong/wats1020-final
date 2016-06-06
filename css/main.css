@@ -1,19 +1,48 @@
 @media (min-width: 768px) {
   body {
-    padding: 5%;
+    padding: 2%;
   }
+  
+  body { 
+	font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+	line-height: 1.8;
+	color: #3B3B35; 
+  }
+  
+  header, h2 {
+  font-family: 'Quicksand', serif;
+	font-weight: 700;
+  color: #342A28;
+  }
+  
+  #logo {
+    padding: 0;
+    margin-top: -15px;
+    float: left;
+  }
+  
   #main-nav ul li {
     display: inline;
     margin-left: 20px;
+    text-decoration: none;
+	  transition: all .5s ease;
   }
+  
   #main-nav {
     float: right;
     padding: 0;
   }  
+  
+  #main-nav a:hover {
+  color: #342A28;
+  text-decoration: none;
+  }
+
 }
 
 .carousel-inner > .item > img, .carousel-inner > .item > a > img{
-    margin:auto;
+    margin: auto;
 }
 
 .carousel {
@@ -22,4 +51,43 @@
 
 #columns {
   margin-top: 32px;
+}
+
+#columns li {
+  list-style: none;
+}
+
+#mapid { 
+  height: 300px; 
+}
+
+.links {
+  text-align: center;
+  background: #F2F2F2;
+  padding: 20px;
+}
+
+.links li {
+  display: inline-block;
+}
+
+footer {
+  text-align: center;
+  padding: 50px;
+	padding-bottom: 0;
+  margin-top: 20px;
+  background: #D5D4D3;
+}
+
+footer li {
+	display: inline-block;
+  padding: 30px;
+ } 
+
+.sub-footer {
+	text-align-last: left;
+	padding-top: 20px;
+	padding-bottom: 0;
+	font-size: smaller;
+	margin-bottom: 0;
 }

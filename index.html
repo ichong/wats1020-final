@@ -6,32 +6,43 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <title>Bean and Flow</title>
   <meta name="description" content="Bean and Flow Workspace and Cafe.">
+  <meta name="keywords" content="Cafe, Coffee, Wifi, Workspace, Organic">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
 
   <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link href='https://fonts.googleapis.com/css?family=Roboto:400,700,900,300' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Quicksand:400,700' rel='stylesheet' type='text/css'>
   <style>
     body {
       padding-top: 50px;
       padding-bottom: 20px;
     }
   </style>
-
+  <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.css" />
   <link rel="stylesheet" href="css/bootstrap-theme.min.css">
   <link rel="stylesheet" href="css/main.css">
 
   <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+  <script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
   <link rel="shortcut icon" href="img/favicon.ico">
+  
+  <script src="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 </head>
 
 <body>
   <header>
+    <nav id="logo">
+      <img src="img/logo.png" alt="Bean and Flow Cafe" style="height: 50px;">
+    </nav>
     <nav id="main-nav">
       <ul>
-        <li><a href=#>Home</a></li>
-        <li><a href=#>About</a></li>
-        <li><a href=#>Share</a></li>
-        <li><a href=#>Contact</a></li>
+        <li><a href=#about-us>About</a></li>
+        <li><a href=#mapid>Locations</a></li>
+        <li><a href=#share-links>Share</a></li>
+        <li><a href="form.html">Contact</a></li>
     </nav>
   </header>
 
@@ -43,7 +54,7 @@
       <div class="item active">
         <img src="img/growbeans.jpeg" alt="Bean Plants">
         <div class="carousel-caption">
-          Support Sustaining Bean Farms
+          Support Sustaining Coffee Bean Farms
         </div>
       </div>
 
@@ -93,30 +104,60 @@
       <span class="sr-only">Next</span>
     </a>
   </div>
+    <div>
+      <h2>Locations</h2>
+      <div id="mapid"></div>
+    </div>
+
   <div id="columns" class="container-fluid">
     <div class="row">
       <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-        <p>Bean and Flow Cafe offers free wifi, reservable shared workspaces, and high quality, organic coffee sourced from sustainable, loving farms.
-          
-        </p>
+        <h3>Capitol Hill</h3>
+          <ul>
+              <li>1414 E John Ave</li>
+              <li>Seattle, WA 98122</li>
+            <li>206-744-5222</li>
+        </ul>
       </div>
 
       <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
         <nav>
-          <ul>
-            <li><a href=#>Home</a></li>
-            <li><a href=#>About</a></li>
-            <li><a href=#>Share</a></li>
-            <li><a href=#>Contact</a></li>
+          <h3>South Lake Union</h3>
+            <ul>
+              <li>777 Yale Ave N</li>
+              <li>Seattle, WA 98111</li>
+              <li>206-398-5222</li>
+          </ul>
         </nav>
       </div>
 
       <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-        Be a part of a collaborative community. Bring your laptop, pick an open space and get to work. 
+        <h3>Downtown</h3>
+          <ul>
+              <li>400 Olive Way</li>
+              <li>Seattle, WA 98104</li>
+              <li>206.299.5222</li>
+        </ul>
       </div>
 
     </div>
   </div>
+      <div id="about-us">
+        <h2>What We Do</h2>
+        <p>Bean and Flow Cafe offers free wifi, reservable shared workspaces, and high quality, organic coffee sourced from sustainable, loving farms. Be a part of a collaborative community. Bring your laptop, pick an open space and get to work.</p>
+      </div>
+  <footer>
+    <div class="links" id="share-links">
+        <li><a href="http://www.facebook.com"><i class= "fa fa-facebook-official fa-3x"></i></a></li>
+        <li><a href="http://www.twitter.com"><i class="fa fa-twitter fa-3x"></i></a></li>
+        <li><a href="http://www.instagram.com"><i class="fa fa-instagram fa-3x"></i></a></li>
+    </ul>
+    </div>
+			
+    <div class="sub-footer">
+        <p>Made By Isa. Seattle University WATS 1020 2016</p>
+        </div>
+  </footer>
 
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.js"></script>
   <script>
